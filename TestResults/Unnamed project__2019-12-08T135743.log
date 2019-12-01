@@ -1,0 +1,50 @@
+﻿2019-12-08T13:57:43.8382142+02:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2019-12-08T13:57:43.8382142+02:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.1.38 in Framework clr40 in x86 mode execution started
+2019-12-08T13:57:43.8382142+02:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\packages\SpecRun.Runner.3.1.38\tools\net45\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-12-08T13:57:43.8850885+02:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-08T13:57:43.8860862+02:00;VSTestExecutionThread;Info;Output folder configured to "C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\TestResults" (default)
+2019-12-08T13:57:43.8860862+02:00;VSTestExecutionThread;Info;Profile: 
+2019-12-08T13:57:43.9269766+02:00;VSTestExecutionThread;Info;Log file path: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\TestResults\Unnamed project__2019-12-08T135743.log
+2019-12-08T13:57:43.9409388+02:00;VSTestExecutionThread;Info;SpecFlow+Runner Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-12-08T13:57:43.9828273+02:00;Thread#13;Info;Checking license
+2019-12-08T13:57:44.0077606+02:00;Thread#13;Info;Evaluation mode: test execution starts in 12 seconds... (this delay is removed in the registered version)
+2019-12-08T13:57:56.0099817+02:00;Thread#13;Info;Evaluation delay finished.
+2019-12-08T13:57:56.0139720+02:00;Thread#13;Info;License check completed
+2019-12-08T13:57:56.0139720+02:00;Thread#13;Info;starting test run
+2019-12-08T13:57:56.0289328+02:00;Thread#13;Info;Discovering target: Default
+2019-12-08T13:57:56.0289328+02:00;Thread#13;Info;Discovering tests from assembly: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-08T13:57:56.4478115+02:00;Thread#13;Info;Discovered tests from assembly: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-08T13:57:56.4488095+02:00:Test Suite Dump
+2019-12-08T13:57:56.4498388+02:00:#0: Unnamed project/ - 
+2019-12-08T13:57:56.4498388+02:00:#1: Default - 
+2019-12-08T13:57:56.4498388+02:00:#2: UnitTestProject - 
+2019-12-08T13:57:56.4498388+02:00:#3: Check if word is present in paragraph - 
+2019-12-08T13:57:56.4817478+02:00:#4: Check if the word is present on the page - TestAssembly:UnitTestProject/Feature:Check+if+word+is+present+in+paragraph/Scenario:Check+if+the+word+is+present+on+the+page
+2019-12-08T13:57:56.4817478+02:00:End: Test Suite Dump
+2019-12-08T13:57:56.5036626+02:00:Thread#0:Scheduler: get next test for thread 0
+2019-12-08T13:57:56.5046592+02:00:Thread#:Scheduler: testitem #4 from normal test queue 
+2019-12-08T13:57:56.5046592+02:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2019-12-08T13:57:56.5076837+02:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2019-12-08T13:57:56.5076837+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2019-12-08T13:57:56.5076837+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2019-12-08T13:57:56.5076837+02:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2019-12-08T13:57:56.5086814+02:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2019-12-08T13:57:56.5096781+02:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2019-12-08T13:57:56.5116729+02:00:Thread #0: creating new test thread executor for UnitTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+2019-12-08T13:57:56.5126384+02:00:Thread #0: Creating test assembly executor for execution model AppDomain
+2019-12-08T13:57:56.5216151+02:00:Thread #0: Creating test assembly executor for execution model AppDomain
+2019-12-08T13:57:56.5226125+02:00:Thread #0: using TechTalk.SpecRun.Framework.Execution.InProcess.InProcAppDomainTestAssemblyExecutorHost to execute tests
+2019-12-08T13:57:56.8193927+02:00:Thread#0:T:-> Loading plugin C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\SpecRun.Runtime.SpecFlowPlugin.dll
+2019-12-08T13:57:56.8283676+02:00:Thread#0:T:-> Using default config
+2019-12-08T13:57:57.3343029+02:00:Thread#0: Test #4/0 is started on thread #0
+2019-12-08T13:57:57.3562443+02:00:Thread#0:B:When I navigate to lipsum.com
+2019-12-08T13:57:57.4235055+02:00:Thread#0:T:No matching step definition found for the step. Use the following code to create one:
+2019-12-08T13:57:57.4235055+02:00:Thread#0:T:        [When(@"I navigate to lipsum\.com")]
+2019-12-08T13:57:57.4235055+02:00:Thread#0:T:        public void WhenINavigateToLipsum_Com()
+2019-12-08T13:57:57.4235055+02:00:Thread#0:T:        {
+2019-12-08T13:57:57.4235055+02:00:Thread#0:T:            ScenarioContext.Current.Pending();
+2019-12-08T13:57:57.4235055+02:00:Thread#0:T:        }
+2019-12-08T13:57:57.4245025+02:00:Thread#0:B:And switch the page language to Russian
+2019-12-08T13:57:57.4304776+02:00:Thread#0:T:skipped because of previous errors
+2019-12-08T13:57:57.4304776+02:00:Thread#0:B:Then assert that there is the word 'рыба' in the first paragraph
+2019-12-08T13:57:57.4324485+02:00:Thread#0:T:binding error: Parameter count mismatch! The binding method 'UnitTestProject:UnitTestProject.SpecFlowFeature1Steps.ThenAssertThatThereIsTheWordInTheFirstParagraph()' should have 1 parameters

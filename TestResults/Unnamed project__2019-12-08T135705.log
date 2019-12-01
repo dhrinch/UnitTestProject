@@ -1,0 +1,121 @@
+﻿2019-12-08T13:57:05.2298692+02:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2019-12-08T13:57:05.2298692+02:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.1.38 in Framework clr40 in x86 mode execution started
+2019-12-08T13:57:05.2298692+02:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\packages\SpecRun.Runner.3.1.38\tools\net45\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-12-08T13:57:05.2807390+02:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-08T13:57:05.2807390+02:00;VSTestExecutionThread;Info;Output folder configured to "C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\TestResults" (default)
+2019-12-08T13:57:05.2817365+02:00;VSTestExecutionThread;Info;Profile: 
+2019-12-08T13:57:05.3046760+02:00;VSTestExecutionThread;Info;Log file path: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\TestResults\Unnamed project__2019-12-08T135705.log
+2019-12-08T13:57:05.3296085+02:00;VSTestExecutionThread;Info;SpecFlow+Runner Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-12-08T13:57:05.3405796+02:00;Thread#13;Info;Checking license
+2019-12-08T13:57:05.3625203+02:00;Thread#13;Info;Evaluation mode: test execution starts in 8 seconds... (this delay is removed in the registered version)
+2019-12-08T13:57:13.3635158+02:00;Thread#13;Info;Evaluation delay finished.
+2019-12-08T13:57:13.3854561+02:00;Thread#13;Info;License check completed
+2019-12-08T13:57:13.3864531+02:00;Thread#13;Info;starting test run
+2019-12-08T13:57:13.4183664+02:00;Thread#13;Info;Discovering target: Default
+2019-12-08T13:57:13.4183664+02:00;Thread#13;Info;Discovering tests from assembly: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-08T13:57:13.6886427+02:00;Thread#13;Info;Discovered tests from assembly: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-08T13:57:13.6896407+02:00:Test Suite Dump
+2019-12-08T13:57:13.6906380+02:00:#0: Unnamed project/ - 
+2019-12-08T13:57:13.6906380+02:00:#1: Default - 
+2019-12-08T13:57:13.6906380+02:00:#2: UnitTestProject - 
+2019-12-08T13:57:13.6906380+02:00:#3: Check if word is present in paragraph - 
+2019-12-08T13:57:13.7165681+02:00:#4: Check if the word is present on the page - TestAssembly:UnitTestProject/Feature:Check+if+word+is+present+in+paragraph/Scenario:Check+if+the+word+is+present+on+the+page
+2019-12-08T13:57:13.7165681+02:00:End: Test Suite Dump
+2019-12-08T13:57:13.7335225+02:00:Thread#0:Scheduler: get next test for thread 0
+2019-12-08T13:57:13.7345205+02:00:Thread#:Scheduler: testitem #4 from normal test queue 
+2019-12-08T13:57:13.7345205+02:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2019-12-08T13:57:13.7385098+02:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2019-12-08T13:57:13.7385098+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2019-12-08T13:57:13.7385098+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2019-12-08T13:57:13.7385098+02:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2019-12-08T13:57:13.7385098+02:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2019-12-08T13:57:13.7395067+02:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2019-12-08T13:57:13.7415013+02:00:Thread #0: creating new test thread executor for UnitTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+2019-12-08T13:57:13.7434969+02:00:Thread #0: Creating test assembly executor for execution model AppDomain
+2019-12-08T13:57:13.7609589+02:00:Thread #0: Creating test assembly executor for execution model AppDomain
+2019-12-08T13:57:13.7629535+02:00:Thread #0: using TechTalk.SpecRun.Framework.Execution.InProcess.InProcAppDomainTestAssemblyExecutorHost to execute tests
+2019-12-08T13:57:14.3623510+02:00:Thread#0:T:-> Loading plugin C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\SpecRun.Runtime.SpecFlowPlugin.dll
+2019-12-08T13:57:14.3813002+02:00:Thread#0:T:-> Using default config
+2019-12-08T13:57:14.9672620+02:00:Thread#0: Test #4/0 is started on thread #0
+2019-12-08T13:57:14.9941911+02:00:Thread#0:B:When I navigate to lipsum.com
+2019-12-08T13:57:15.0939249+02:00:Thread#0:T:No matching step definition found for the step. Use the following code to create one:
+2019-12-08T13:57:15.0939249+02:00:Thread#0:T:        [When(@"I navigate to lipsum\.com")]
+2019-12-08T13:57:15.0939249+02:00:Thread#0:T:        public void WhenINavigateToLipsum_Com()
+2019-12-08T13:57:15.0949221+02:00:Thread#0:T:        {
+2019-12-08T13:57:15.0949221+02:00:Thread#0:T:            ScenarioContext.Current.Pending();
+2019-12-08T13:57:15.0949221+02:00:Thread#0:T:        }
+2019-12-08T13:57:15.0959195+02:00:Thread#0:B:And switch the page language to Russian
+2019-12-08T13:57:15.1009046+02:00:Thread#0:T:skipped because of previous errors
+2019-12-08T13:57:15.1019025+02:00:Thread#0:B:Then assert that there is the word 'рыба' in the first paragraph
+2019-12-08T13:57:15.1028997+02:00:Thread#0:T:binding error: Parameter count mismatch! The binding method 'UnitTestProject:UnitTestProject.SpecFlowFeature1Steps.ThenAssertThatThereIsTheWordInTheFirstParagraph()' should have 1 parameters
+2019-12-08T13:57:15.1593369+02:00:Thread#0:TestItem#4:Scheduler: reschedule tests for testitem #4
+2019-12-08T13:57:15.1603341+02:00:Thread#0:Scheduler: get next test for thread 0
+2019-12-08T13:57:15.1603341+02:00:Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+2019-12-08T13:57:15.1603341+02:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2019-12-08T13:57:15.1603341+02:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2019-12-08T13:57:15.1603341+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2019-12-08T13:57:15.1603341+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2019-12-08T13:57:15.1603341+02:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2019-12-08T13:57:15.1603341+02:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2019-12-08T13:57:15.1603341+02:00:Thread#0:Scheduler: with testItemExecutionIndex 1
+2019-12-08T13:57:15.1713065+02:00:Thread#0: Test #4/0 is finished on thread #0 as Failed within 0.2040445 seconds
+2019-12-08T13:57:15.1723039+02:00:Thread#0: Test #4/1 is started on thread #0
+2019-12-08T13:57:15.1733005+02:00:Thread#0:B:When I navigate to lipsum.com
+2019-12-08T13:57:15.1752950+02:00:Thread#0:T:No matching step definition found for the step. Use the following code to create one:
+2019-12-08T13:57:15.1752950+02:00:Thread#0:T:        [When(@"I navigate to lipsum\.com")]
+2019-12-08T13:57:15.1752950+02:00:Thread#0:T:        public void WhenINavigateToLipsum_Com()
+2019-12-08T13:57:15.1752950+02:00:Thread#0:T:        {
+2019-12-08T13:57:15.1752950+02:00:Thread#0:T:            ScenarioContext.Current.Pending();
+2019-12-08T13:57:15.1752950+02:00:Thread#0:T:        }
+2019-12-08T13:57:15.1752950+02:00:Thread#0:B:And switch the page language to Russian
+2019-12-08T13:57:15.1752950+02:00:Thread#0:T:skipped because of previous errors
+2019-12-08T13:57:15.1762929+02:00:Thread#0:B:Then assert that there is the word 'рыба' in the first paragraph
+2019-12-08T13:57:15.1762929+02:00:Thread#0:T:binding error: Parameter count mismatch! The binding method 'UnitTestProject:UnitTestProject.SpecFlowFeature1Steps.ThenAssertThatThereIsTheWordInTheFirstParagraph()' should have 1 parameters
+2019-12-08T13:57:15.1772911+02:00:Thread#0:Scheduler: get next test for thread 0
+2019-12-08T13:57:15.1772911+02:00:Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+2019-12-08T13:57:15.1772911+02:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2019-12-08T13:57:15.1772911+02:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2019-12-08T13:57:15.1772911+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2019-12-08T13:57:15.1772911+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2019-12-08T13:57:15.1772911+02:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2019-12-08T13:57:15.1772911+02:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2019-12-08T13:57:15.1772911+02:00:Thread#0:Scheduler: with testItemExecutionIndex 2
+2019-12-08T13:57:15.1782871+02:00:Thread#0: Test #4/1 is finished on thread #0 as Failed within 0.0059832 seconds
+2019-12-08T13:57:15.1782871+02:00:Thread#0: Test #4/2 is started on thread #0
+2019-12-08T13:57:15.1782871+02:00:Thread#0:B:When I navigate to lipsum.com
+2019-12-08T13:57:15.1802819+02:00:Thread#0:T:No matching step definition found for the step. Use the following code to create one:
+2019-12-08T13:57:15.1802819+02:00:Thread#0:T:        [When(@"I navigate to lipsum\.com")]
+2019-12-08T13:57:15.1802819+02:00:Thread#0:T:        public void WhenINavigateToLipsum_Com()
+2019-12-08T13:57:15.1802819+02:00:Thread#0:T:        {
+2019-12-08T13:57:15.1802819+02:00:Thread#0:T:            ScenarioContext.Current.Pending();
+2019-12-08T13:57:15.1802819+02:00:Thread#0:T:        }
+2019-12-08T13:57:15.1802819+02:00:Thread#0:B:And switch the page language to Russian
+2019-12-08T13:57:15.1802819+02:00:Thread#0:T:skipped because of previous errors
+2019-12-08T13:57:15.1802819+02:00:Thread#0:B:Then assert that there is the word 'рыба' in the first paragraph
+2019-12-08T13:57:15.1812815+02:00:Thread#0:T:binding error: Parameter count mismatch! The binding method 'UnitTestProject:UnitTestProject.SpecFlowFeature1Steps.ThenAssertThatThereIsTheWordInTheFirstParagraph()' should have 1 parameters
+2019-12-08T13:57:15.1812815+02:00:Thread#0:Scheduler: get next test for thread 0
+2019-12-08T13:57:15.1812815+02:00:Thread#:Scheduler: at the end of normal test queue
+2019-12-08T13:57:15.1812815+02:00:Thread#0:Scheduler: enumerator for thread is at end
+2019-12-08T13:57:15.1812815+02:00:Thread#0:Scheduler: No more tests for thread
+2019-12-08T13:57:15.1912511+02:00:Thread#0: Test #4/2 is finished on thread #0 as Failed within 0.012964 seconds
+2019-12-08T13:57:15.2111986+02:00:Trying to cancel thread
+2019-12-08T13:57:15.2111986+02:00:Thread cancelled
+2019-12-08T13:57:15.2151873+02:00:Thread#-1:Scheduler: get next test for thread -1
+2019-12-08T13:57:15.2151873+02:00:Thread#:Scheduler: at the end of normal test queue
+2019-12-08T13:57:15.2151873+02:00:Thread#-1:Scheduler: enumerator for thread is at end
+2019-12-08T13:57:15.2191766+02:00;Thread#13;Info;test run finished
+2019-12-08T13:57:15.2191766+02:00;Thread#13;Info;publishing test results
+2019-12-08T13:57:15.2480355+02:00;Thread#13;Info;test results published
+2019-12-08T13:57:15.2480355+02:00;Thread#13;Info;generating reports
+2019-12-08T13:57:15.3442892+02:00;Thread#13;Info;Starting external report generation process
+2019-12-08T13:57:16.7196312+02:00;Thread#13;Info;Successfully generated reports.
+2019-12-08T13:57:16.7216265+02:00;Thread#13;Info;Successfully generated reports
+2019-12-08T13:57:16.7306028+02:00:Total: 1 (test executions: 3)
+2019-12-08T13:57:16.7316016+02:00:Succeeded: 0
+2019-12-08T13:57:16.7325977+02:00:Ignored: 0
+2019-12-08T13:57:16.7325977+02:00:Pending: 0
+2019-12-08T13:57:16.7325977+02:00:Skipped: 0
+2019-12-08T13:57:16.7335948+02:00:Failed: 1
+2019-12-08T13:57:16.7405764+02:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2019-12-08T13:57:16.7415736+02:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\TestResults\Unnamed project__2019-12-08T135705.html'
+========== End of log file ==========

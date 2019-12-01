@@ -1,0 +1,106 @@
+﻿2019-12-03T08:12:29.6029796+02:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2019-12-03T08:12:29.6029796+02:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.1.37 in Framework clr40 in x86 mode execution started
+2019-12-03T08:12:29.6029796+02:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\packages\SpecRun.Runner.3.1.37\tools\net45\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-12-03T08:12:29.6543038+02:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-03T08:12:29.6543038+02:00;VSTestExecutionThread;Info;Output folder configured to "C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\TestResults" (default)
+2019-12-03T08:12:29.6543038+02:00;VSTestExecutionThread;Info;Profile: 
+2019-12-03T08:12:29.6722550+02:00;VSTestExecutionThread;Info;Log file path: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\TestResults\Unnamed project__2019-12-03T081229.log
+2019-12-03T08:12:29.6862174+02:00;VSTestExecutionThread;Info;SpecFlow+Runner Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-12-03T08:12:29.7021741+02:00;Thread#14;Info;Checking license
+2019-12-03T08:12:29.7460588+02:00;Thread#14;Info;Evaluation mode: test execution starts in 5 seconds... (this delay is removed in the registered version)
+2019-12-03T08:12:34.7481486+02:00;Thread#14;Info;Evaluation delay finished.
+2019-12-03T08:12:34.7531343+02:00;Thread#14;Info;License check completed
+2019-12-03T08:12:34.7541311+02:00;Thread#14;Info;starting test run
+2019-12-03T08:12:34.7800908+02:00;Thread#14;Info;Discovering target: Default
+2019-12-03T08:12:34.7800908+02:00;Thread#14;Info;Discovering tests from assembly: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-03T08:12:35.0274018+02:00;Thread#14;Info;Discovered tests from assembly: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-03T08:12:35.0274018+02:00:Test Suite Dump
+2019-12-03T08:12:35.0293955+02:00:#0: Unnamed project/ - 
+2019-12-03T08:12:35.0293955+02:00:#1: Default - 
+2019-12-03T08:12:35.0293955+02:00:#2: UnitTestProject - 
+2019-12-03T08:12:35.0293955+02:00:#3: Check if word is present in paragraph - 
+2019-12-03T08:12:35.0533985+02:00:#4: Check if the word is present on the page - TestAssembly:UnitTestProject/Feature:Check+if+word+is+present+in+paragraph/Scenario:Check+if+the+word+is+present+on+the+page
+2019-12-03T08:12:35.0533985+02:00:End: Test Suite Dump
+2019-12-03T08:12:35.0693244+02:00:Thread#0:Scheduler: get next test for thread 0
+2019-12-03T08:12:35.0713535+02:00:Thread#:Scheduler: testitem #4 from normal test queue 
+2019-12-03T08:12:35.0713535+02:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2019-12-03T08:12:35.0743426+02:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2019-12-03T08:12:35.0743426+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2019-12-03T08:12:35.0743426+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2019-12-03T08:12:35.0743426+02:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2019-12-03T08:12:35.0743426+02:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2019-12-03T08:12:35.0753424+02:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2019-12-03T08:12:35.0773344+02:00:Thread #0: creating new test thread executor for UnitTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+2019-12-03T08:12:35.0783347+02:00:Thread #0: Creating test assembly executor for execution model AppDomain
+2019-12-03T08:12:35.0952549+02:00:Thread #0: Creating test assembly executor for execution model AppDomain
+2019-12-03T08:12:35.0962797+02:00:Thread #0: using TechTalk.SpecRun.Framework.Execution.InProcess.InProcAppDomainTestAssemblyExecutorHost to execute tests
+2019-12-03T08:12:35.5667409+02:00:Thread#0:T:-> Loading plugin C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\SpecRun.Runtime.SpecFlowPlugin.dll
+2019-12-03T08:12:35.5896796+02:00:Thread#0:T:-> Using default config
+2019-12-03T08:12:36.1820961+02:00:Thread#0: Test #4/0 is started on thread #0
+2019-12-03T08:12:36.2020674+02:00:Thread#0:B:When I navigate to lipsum.com
+2019-12-03T08:12:46.1190343+02:00:Thread#0:T:done: SpecFlowFeature1Steps.WhenINavigateToLipsum_Com() (9.9s)
+2019-12-03T08:12:46.1200319+02:00:Thread#0:B:And switch the page language to Russian
+2019-12-03T08:12:46.2097910+02:00:Thread#0:T:error: The command failed because the specified element reference is stale.
+2019-12-03T08:12:46.2107873+02:00:Thread#0:B:Then assert that there is the word 'рыба' in the first paragraph
+2019-12-03T08:12:46.2127820+02:00:Thread#0:T:skipped because of previous errors
+2019-12-03T08:12:46.2517055+02:00:Thread#0:TestItem#4:Scheduler: reschedule tests for testitem #4
+2019-12-03T08:12:46.2527029+02:00:Thread#0:Scheduler: get next test for thread 0
+2019-12-03T08:12:46.2527029+02:00:Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+2019-12-03T08:12:46.2527029+02:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2019-12-03T08:12:46.2527029+02:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2019-12-03T08:12:46.2527029+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2019-12-03T08:12:46.2527029+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2019-12-03T08:12:46.2527029+02:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2019-12-03T08:12:46.2527029+02:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2019-12-03T08:12:46.2527029+02:00:Thread#0:Scheduler: with testItemExecutionIndex 1
+2019-12-03T08:12:46.2616830+02:00:Thread#0: Test #4/0 is finished on thread #0 as Failed within 10.0785868 seconds
+2019-12-03T08:12:46.2626784+02:00:Thread#0: Test #4/1 is started on thread #0
+2019-12-03T08:12:46.2626784+02:00:Thread#0:B:When I navigate to lipsum.com
+2019-12-03T08:12:50.9004925+02:00:Thread#0:T:done: SpecFlowFeature1Steps.WhenINavigateToLipsum_Com() (4.6s)
+2019-12-03T08:12:50.9004925+02:00:Thread#0:B:And switch the page language to Russian
+2019-12-03T08:12:50.9533506+02:00:Thread#0:T:error: The command failed because the specified element reference is stale.
+2019-12-03T08:12:50.9533506+02:00:Thread#0:B:Then assert that there is the word 'рыба' in the first paragraph
+2019-12-03T08:12:50.9533506+02:00:Thread#0:T:skipped because of previous errors
+2019-12-03T08:12:50.9543479+02:00:Thread#0:Scheduler: get next test for thread 0
+2019-12-03T08:12:50.9543479+02:00:Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+2019-12-03T08:12:50.9543479+02:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2019-12-03T08:12:50.9543479+02:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2019-12-03T08:12:50.9543479+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2019-12-03T08:12:50.9543479+02:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2019-12-03T08:12:50.9543479+02:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2019-12-03T08:12:50.9543479+02:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2019-12-03T08:12:50.9543479+02:00:Thread#0:Scheduler: with testItemExecutionIndex 2
+2019-12-03T08:12:50.9543479+02:00:Thread#0: Test #4/1 is finished on thread #0 as Failed within 4.6916695 seconds
+2019-12-03T08:12:50.9543479+02:00:Thread#0: Test #4/2 is started on thread #0
+2019-12-03T08:12:50.9553448+02:00:Thread#0:B:When I navigate to lipsum.com
+2019-12-03T08:12:55.8006336+02:00:Thread#0:T:done: SpecFlowFeature1Steps.WhenINavigateToLipsum_Com() (4.8s)
+2019-12-03T08:12:55.8006336+02:00:Thread#0:B:And switch the page language to Russian
+2019-12-03T08:12:55.8549898+02:00:Thread#0:T:error: The command failed because the specified element reference is stale.
+2019-12-03T08:12:55.8549898+02:00:Thread#0:B:Then assert that there is the word 'рыба' in the first paragraph
+2019-12-03T08:12:55.8549898+02:00:Thread#0:T:skipped because of previous errors
+2019-12-03T08:12:55.8549898+02:00:Thread#0:Scheduler: get next test for thread 0
+2019-12-03T08:12:55.8549898+02:00:Thread#:Scheduler: at the end of normal test queue
+2019-12-03T08:12:55.8549898+02:00:Thread#0:Scheduler: enumerator for thread is at end
+2019-12-03T08:12:55.8549898+02:00:Thread#0:Scheduler: No more tests for thread
+2019-12-03T08:12:55.8639646+02:00:Thread#0: Test #4/2 is finished on thread #0 as Failed within 4.9096167 seconds
+2019-12-03T08:12:55.8849089+02:00:Trying to cancel thread
+2019-12-03T08:12:55.8849089+02:00:Thread cancelled
+2019-12-03T08:12:55.8888979+02:00:Thread#-1:Scheduler: get next test for thread -1
+2019-12-03T08:12:55.8888979+02:00:Thread#:Scheduler: at the end of normal test queue
+2019-12-03T08:12:55.8888979+02:00:Thread#-1:Scheduler: enumerator for thread is at end
+2019-12-03T08:12:55.8928873+02:00;Thread#14;Info;test run finished
+2019-12-03T08:12:55.8928873+02:00;Thread#14;Info;publishing test results
+2019-12-03T08:12:55.9238060+02:00;Thread#14;Info;test results published
+2019-12-03T08:12:55.9238060+02:00;Thread#14;Info;generating reports
+2019-12-03T08:12:56.0275688+02:00;Thread#14;Info;Starting external report generation process
+2019-12-03T08:12:57.8161505+02:00;Thread#14;Info;Successfully generated reports.
+2019-12-03T08:12:57.8181465+02:00;Thread#14;Info;Successfully generated reports
+2019-12-03T08:12:57.8261239+02:00:Total: 1 (test executions: 3)
+2019-12-03T08:12:57.8281199+02:00:Succeeded: 0
+2019-12-03T08:12:57.8281199+02:00:Ignored: 0
+2019-12-03T08:12:57.8291158+02:00:Pending: 0
+2019-12-03T08:12:57.8291158+02:00:Skipped: 0
+2019-12-03T08:12:57.8291158+02:00:Failed: 1
+2019-12-03T08:12:57.8370954+02:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2019-12-03T08:12:57.8370954+02:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\TestResults\Unnamed project__2019-12-03T081229.html'
+========== End of log file ==========

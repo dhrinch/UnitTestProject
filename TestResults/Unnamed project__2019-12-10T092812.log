@@ -1,0 +1,46 @@
+﻿2019-12-10T09:28:11.9858021+02:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2019-12-10T09:28:11.9858021+02:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.1.38 in Framework clr40 in x86 mode execution started
+2019-12-10T09:28:11.9858021+02:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\packages\SpecRun.Runner.3.1.38\tools\net45\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-12-10T09:28:12.0665861+02:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-10T09:28:12.0675844+02:00;VSTestExecutionThread;Info;Output folder configured to "C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\TestResults" (default)
+2019-12-10T09:28:12.0675844+02:00;VSTestExecutionThread;Info;Profile: 
+2019-12-10T09:28:12.1064785+02:00;VSTestExecutionThread;Info;Log file path: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\TestResults\Unnamed project__2019-12-10T092812.log
+2019-12-10T09:28:12.1324086+02:00;VSTestExecutionThread;Info;SpecFlow+Runner Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-12-10T09:28:12.1443770+02:00;Thread#14;Info;Checking license
+2019-12-10T09:28:12.1902552+02:00;Thread#14;Info;Evaluation mode: test execution starts in 8 seconds... (this delay is removed in the registered version)
+2019-12-10T09:28:20.1913006+02:00;Thread#14;Info;Evaluation delay finished.
+2019-12-10T09:28:20.2012709+02:00;Thread#14;Info;License check completed
+2019-12-10T09:28:20.2012709+02:00;Thread#14;Info;starting test run
+2019-12-10T09:28:20.2301933+02:00;Thread#14;Info;Discovering target: Default
+2019-12-10T09:28:20.2301933+02:00;Thread#14;Info;Discovering tests from assembly: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-10T09:28:20.3249396+02:00;Thread#14;Info;Discovered tests from assembly: C:\Users\Beta\OneDrive\Documents\Visual Studio 2017\Projects\UnitTestProject\bin\Debug\UnitTestProject.dll
+2019-12-10T09:28:20.3259370+02:00:Test Suite Dump
+2019-12-10T09:28:20.3279332+02:00:#0: Unnamed project/ - 
+2019-12-10T09:28:20.3279332+02:00:#1: Default - 
+2019-12-10T09:28:20.3279332+02:00:#2: UnitTestProject - 
+2019-12-10T09:28:20.3279332+02:00:End: Test Suite Dump
+2019-12-10T09:28:20.3458845+02:00:Thread#0:Scheduler: get next test for thread 0
+2019-12-10T09:28:20.3478784+02:00:Thread#:Scheduler: at the end of normal test queue
+2019-12-10T09:28:20.3478784+02:00:Thread#0:Scheduler: enumerator for thread is at end
+2019-12-10T09:28:20.3478784+02:00:Thread#0:Scheduler: No more tests for thread
+2019-12-10T09:28:20.3488754+02:00:Trying to cancel thread
+2019-12-10T09:28:20.3488754+02:00:Thread cancelled
+2019-12-10T09:28:20.3538621+02:00:Thread#-1:Scheduler: get next test for thread -1
+2019-12-10T09:28:20.3538621+02:00:Thread#:Scheduler: at the end of normal test queue
+2019-12-10T09:28:20.3538621+02:00:Thread#-1:Scheduler: enumerator for thread is at end
+2019-12-10T09:28:20.3548595+02:00;Thread#14;Info;test run finished
+2019-12-10T09:28:20.3548595+02:00;Thread#14;Info;publishing test results
+2019-12-10T09:28:20.3738090+02:00;Thread#14;Info;test results published
+2019-12-10T09:28:20.3748064+02:00;Thread#14;Info;generating reports
+2019-12-10T09:28:20.4585830+02:00;Thread#14;Info;Starting external report generation process
+2019-12-10T09:28:21.9096799+02:00;Thread#14;Error;Could not generate test run result reports. An error occurred in the generator.
+2019-12-10T09:28:21.9096799+02:00;Thread#14;Error;External program returned exit code '-2'
+2019-12-10T09:28:21.9096799+02:00;Thread#14;Info;Failed generating reports
+2019-12-10T09:28:21.9196525+02:00:Total: 0
+2019-12-10T09:28:21.9206505+02:00:Succeeded: 0
+2019-12-10T09:28:21.9206505+02:00:Ignored: 0
+2019-12-10T09:28:21.9216469+02:00:Pending: 0
+2019-12-10T09:28:21.9216469+02:00:Skipped: 0
+2019-12-10T09:28:21.9216469+02:00:Failed: 0
+2019-12-10T09:28:21.9326188+02:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+========== End of log file ==========
