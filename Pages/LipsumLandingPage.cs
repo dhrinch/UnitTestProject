@@ -1,6 +1,4 @@
-﻿using System;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using UnitTestProject.Assembly;
 
@@ -43,29 +41,12 @@ namespace UnitTestProject.Pages
         {
             startWithChkbox.Click();
         }
-
-        //Generate n paragraphs of loremipsum
-        public void GenerateParagraphs(int n = 5)
+        //Generating 'Lorem ipsum...' of required type
+        public void GenerateLorem(string radioLabel, int n) 
         {
-            if(paragraphsRadio.Displayed && !paragraphsRadio.Enabled) paragraphsRadio.Click();
-            nmbrToGenerate.Clear();
-            nmbrToGenerate.SendKeys("" + n);
-            generateBtn.Click();
-        }
-
-        //Generate n words of loremipsum
-        public void GenerateWords(int n = 5)
-        {
-            wordsRadio.Click();
-            nmbrToGenerate.Clear();
-            nmbrToGenerate.SendKeys("" + n);
-            generateBtn.Click();
-        }
-
-        //Generate n lists of loremipsum
-        public void GenerateLists(int n = 5)
-        {
-            listsRadio.Click();
+            if (radioLabel.Equals("words")) wordsRadio.Click();
+            if (radioLabel.Equals("paragraphs")) paragraphsRadio.Click();
+            if (radioLabel.Equals("lists")) listsRadio.Click();
             nmbrToGenerate.Clear();
             nmbrToGenerate.SendKeys("" + n);
             generateBtn.Click();
@@ -82,6 +63,7 @@ namespace UnitTestProject.Pages
         public LipsumLandingPage()
         {
             driver = Driver.GetInstance();
+            PageFactory.InitElements(driver, this);
             driver.Navigate().GoToUrl("https://lipsum.com/");
             russian = driver.FindElement(By.XPath("//a[@class='ru']"));//Russian language page
             startWithChkbox = driver.FindElement(By.XPath("//input[@id='start']")); //"Start with..." checkbox

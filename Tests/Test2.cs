@@ -1,19 +1,18 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using UnitTestProject.Pages;
-using OpenQA.Selenium.Support.PageObjects;
 
 namespace UnitTestProject.Tests
 {
     [TestClass]
-    public class UnitTest2
+    public class Test2
     {
         [TestMethod]
-        public void TestMethod2()
+        public void TestMethod1()
         {
             LipsumLandingPage lipsum = new LipsumLandingPage();
-            PageFactory.InitElements(lipsum.driver, lipsum);
 
             List<string> paragraphs = new List<string>();
             int numOfParagraphs = 5;
@@ -23,20 +22,19 @@ namespace UnitTestProject.Tests
             for (int i = 0; i < numOfRuns; i++)
             {
                 lipsum.StartWithChkbox();
-                lipsum.GenerateParagraphs(numOfParagraphs);
+                lipsum.GenerateLorem("paragraphs", numOfParagraphs);
                 lipsum.WaitToLoad();
-                LipsumResultsPage result = new LipsumResultsPage();
-                PageFactory.InitElements(result.driver, result);
+                LipsumResultParagraph result = new LipsumResultParagraph();
 
                 //adding all paragraphs on a page to a list
                 foreach (var element in result.driver.FindElements(By.TagName("p")))
                 {
-                    paragraphs.Add(element.Text);
+                    paragraphs.Add(element.Text.ToLower());
                 }
 
                 for (int j = 0; j < numOfParagraphs; j++)
                 {
-                    if (paragraphs[j].Contains("lorem") || paragraphs[j].Contains("Lorem"))
+                    if (paragraphs[j].Contains("lorem"))
                     {
                         cnt++;
                     }

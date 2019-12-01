@@ -1,26 +1,23 @@
-﻿using OpenQA.Selenium;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UnitTestProject.Pages;
-using OpenQA.Selenium.Support.PageObjects;
 
 namespace UnitTestProject.Tests
 {
     [TestClass]
-    public class UnitTest3
+    public class Test3
     {
         [TestMethod]
         public void TestMethod1()
         {
             LipsumLandingPage lipsum = new LipsumLandingPage();
-            
-            List<int> numOfWords = new List<int> { 20, -1, 0, 15, 50 };
+
+            List<int> numOfWords = new List<int> { 5, 20, -1, 0, 15, 50 };
             for (int i = 0; i < numOfWords.Count; i++)
             {
-                lipsum.GenerateWords(numOfWords[i]);
+                lipsum.GenerateLorem("words", numOfWords[i]);
                 lipsum.WaitToLoad();
-                LipsumResultsPage result = new LipsumResultsPage();
-                PageFactory.InitElements(result.driver, result);
+                LipsumResultParagraph result = new LipsumResultParagraph();
 
                 string bodyText = result.GetBodyText();
 
@@ -28,13 +25,13 @@ namespace UnitTestProject.Tests
                 int cnt = 1;
                 while (j <= bodyText.Length - 1)
                 {
-                    if (bodyText[j] == ' ' || bodyText[j] == '\t')
+                    if (bodyText[j] == ' ')
                     {
                         cnt++;
                     }
                     j++;
                 }
-                Assert.AreEqual(numOfWords, cnt);
+                Assert.AreEqual(numOfWords[i], cnt);
                 result.driver.Navigate().Back();
                 lipsum.WaitToLoad();
             }
