@@ -33,6 +33,7 @@ namespace UnitTestProject.Pages
         {
             russian.Click();
         }
+<<<<<<< HEAD:Pages/LandingPage.cs
 
         //Selecting type of 'Lorem ipsum...' objects to generate
         public void SelectType2Generate(string radioLabel) 
@@ -51,6 +52,16 @@ namespace UnitTestProject.Pages
 
         public void GenerateClick()
         {
+=======
+        //Generating 'Lorem ipsum...' of required type
+        public void GenerateLorem(string radioLabel, int n) 
+        {
+            if (radioLabel.Equals("words")) wordsRadio.Click();
+            if (radioLabel.Equals("paragraphs")) paragraphsRadio.Click();
+            if (radioLabel.Equals("lists")) listsRadio.Click();
+            nmbrToGenerate.Clear();
+            nmbrToGenerate.SendKeys("" + n);
+>>>>>>> origin/master:Pages/LipsumLandingPage.cs
             generateBtn.Click();
         }
         
@@ -58,6 +69,10 @@ namespace UnitTestProject.Pages
         {
             driver = Driver.GetInstance();
             PageFactory.InitElements(driver, this);
+<<<<<<< HEAD:Pages/LandingPage.cs
+=======
+            driver.Navigate().GoToUrl("https://lipsum.com/");
+>>>>>>> origin/master:Pages/LipsumLandingPage.cs
             russian = driver.FindElement(By.XPath("//a[@class='ru']"));//Russian language page
             paragraphsRadio = driver.FindElement(By.XPath("//input[@id='paras']"));//"Paragraphs" radio button
             wordsRadio = driver.FindElement(By.XPath("//input[@id='words']"));//"Words" radio button

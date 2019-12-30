@@ -1,8 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-//using UnitTestProject.Pages;
-using UnitTestProject.Assembly;
-//using System.Collections.Generic;
-//using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+using UnitTestProject.Pages;
 
 namespace UnitTestProject.Tests
 {
@@ -12,33 +12,48 @@ namespace UnitTestProject.Tests
         [TestMethod]
         public void TestMethod1()
         {
+            LipsumLandingPage lipsum = new LipsumLandingPage();
 
-            BLL model = new BLL();
-
-            model.GoToLipsum();
-
+            List<string> paragraphs = new List<string>();
+            int numOfParagraphs = 5;
             int numOfRuns = 2;
-            int numOfResultItems = 5;
-            string word = "lipsum";
-            int counter = 0;
+            int cnt = 0;
+            //string text = "";
             for (int i = 0; i < numOfRuns; i++)
             {
-                model.GenerateLorem("paragraphs", numOfResultItems);
-                counter = model.CountWordInParagraphs(word);
-                //Result result = new Result();
+                lipsum.StartWithChkbox();
+                lipsum.GenerateLorem("paragraphs", numOfParagraphs);
+                lipsum.WaitToLoad();
+                LipsumResultParagraph result = new LipsumResultParagraph();
 
-                //List<IWebElement> paragraphs = result.GetParagraphsList();
-                //foreach (IWebElement element in paragraphs)
+                //adding all paragraphs on a page to a list
+                foreach (var element in result.driver.FindElements(By.TagName("p")))
+                {
+                    paragraphs.Add(element.Text.ToLower());
+                }
+
+                for (int j = 0; j < numOfParagraphs; j++)
+                {
+                    if (paragraphs[j].Contains("lorem"))
+                    {
+                        cnt++;
+                    }
+                }
+
+                //for (int j = 0; j < numOfParagraphs; j++)
+                //    text = result.GetParagraphText();
                 //{
-                //    if (element.Text.ToLower().Contains("lorem"))
+                //    if (text.ToLower().Contains("lorem"))
                 //    {
-                //        counter++;
+                //        cnt++;
                 //    }
                 //}
-                Driver.Back();
+                result.driver.Navigate().Back();
+                paragraphs.Clear();
+                lipsum.WaitToLoad();
             }
-            ///Driver.Quit();
-            Assert.IsTrue(counter / numOfRuns >= 3, counter / numOfRuns + " - less than three");
+            Assert.IsTrue(cnt / numOfRuns >= 3, cnt / numOfRuns + " - less than three");
+            lipsum.driver.Quit();
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using UnitTestProject.Assembly;
+using UnitTestProject.Pages;
 
 namespace UnitTestProject.Tests
 {
@@ -9,15 +9,13 @@ namespace UnitTestProject.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            BLL model = new BLL();
+            LipsumLandingPage lipsum = new LipsumLandingPage();
+            lipsum.ChangeLanguage();
 
-            model.GoToLipsum();
-            model.ChangePageLanguage("russian");
+            LipsumLandingRu lipsumRu = new LipsumLandingRu();
 
-            string word = "рыба";
-            bool isWordPresent = model.IsWordOnTranslatedPage(word);
-            //Driver.Quit();           
-            Assert.IsTrue(isWordPresent, $"Doesn't contain {word}");
+            Assert.IsTrue(lipsumRu.GetParagraphText().Contains("рыба"), "Doesn't contain 'рыба'");
+            lipsum.driver.Quit();           
         }        
     }
 }

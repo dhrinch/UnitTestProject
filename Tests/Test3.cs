@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UnitTestProject.Pages;
-using UnitTestProject.Assembly;
 
 namespace UnitTestProject.Tests
 {
@@ -11,31 +10,32 @@ namespace UnitTestProject.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            BLL model = new BLL();
+            LipsumLandingPage lipsum = new LipsumLandingPage();
 
-            model.GoToLipsum();
-            //int counter = 0;
-
-            List<int> howManyWords = new List<int> { 5, 20, -1, 0, 15, 50 };
-            for (int i = 0; i < howManyWords.Count; i++)
+            List<int> numOfWords = new List<int> { 5, 20, -1, 0, 15, 50 };
+            for (int i = 0; i < numOfWords.Count; i++)
             {
-                model.GenerateLorem("words", howManyWords[i]);
-                //Result result = new Result();
+                lipsum.GenerateLorem("words", numOfWords[i]);
+                lipsum.WaitToLoad();
+                LipsumResultParagraph result = new LipsumResultParagraph();
 
-                //string[] bodyText = result.GetAllParagraphs();
-                //int size = result.GetAllParagraphs().Length;
-                //for (int j = 0; j <= size; j++)
-                //{
-                    //if (bodyText[j].Equals(' '))
-                    //{
-                        //counter++;
-                    //}
-                //}
-                //Assert.AreEqual(howManyWords[i], counter);
-                Assert.AreEqual(howManyWords[i], model.CountResultingWords());
-                Driver.Back();
+                string bodyText = result.GetBodyText();
+
+                int j = 0;
+                int cnt = 1;
+                while (j <= bodyText.Length - 1)
+                {
+                    if (bodyText[j] == ' ')
+                    {
+                        cnt++;
+                    }
+                    j++;
+                }
+                Assert.AreEqual(numOfWords[i], cnt);
+                result.driver.Navigate().Back();
+                lipsum.WaitToLoad();
             }
-            Driver.Quit();
+            lipsum.driver.Quit();
         }
     }
 }
